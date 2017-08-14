@@ -1,0 +1,27 @@
+// Cornell.edu Typography (requires the Freight webfont families to be included (e.g., via TypeKit)
+$cornell-font-family-serif: 'freight-text-pro-n4', 'freight-text-pro', serif;
+$cornell-font-family-sans-serif: 'freight-sans-pro-n5', 'freight-sans-pro', sans-serif;
+
+// CWD Base Framework Typography (primarily a system font stack, though Proxima Nova use would require a webfont include (e.g., via TypeKit)
+$cwd-font-family-serif: Georgia, serif;
+$cwd-font-family-sans-serif: Verdana, sans-serif;
+$cwd-font-family-base: $cwd-font-family-sans-serif;
+$cwd-font-family-monospace: Courier, monospace;
+$cwd-font-family-sans-alt: Avenir Next, Proxima Nova, 'proxima-nova', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica Neue, sans-serif;
+$cwd-font-family-serif-alt: Iowan Old Style, Palatino Linotype, Book Antiqua, Times New Roman, serif;
+// Different Windows browsers handle Segoe UI weights differently. When more precision and reliability is needed, these alternate declarations can help (paired with the appropriate font-weight):
+$cwd-font-family-sans-alt-semibold: Avenir Next, Proxima Nova, 'proxima-nova', 'Segoe UI Semibold', 'Segoe UI', Helvetica Neue, sans-serif;
+$cwd-font-family-sans-alt-bold: Avenir Next, Proxima Nova, 'proxima-nova', 'Segoe UI Bold', 'Segoe UI', Helvetica Neue, sans-serif;
+$cwd-font-family-sans-alt-light: Avenir Next, Proxima Nova, 'proxima-nova', 'Segoe UI Light', 'Segoe UI', Helvetica Neue, sans-serif;
+$cwd-font-family-sans-small: Avenir Next, Proxima Nova, 'proxima-nova', 'Segoe UI Light', 'Segoe UI', Helvetica Neue, sans-serif;
+
+// Layout/Grid
+$cwd-container-fluid-max-width: 1280px;
+$cwd-45px-true-height: 48px; // Only partially implemented (a lot of things would need to be tweaked to make this work as a master switch, and buttons would begin to look outrageous at a certain height!)
+
+// Color
+$cwd-color-accent-heading-h2: #b31b1b; // Applies an accent color to basic heading level 2, informed by your custom design (use #000 to pass on this option)
+$cwd-color-accent-heading-h3: #000; // Applies an accent color to basic heading level 3, informed by your custom design (use #000 to pass on this option)
+$cwd-color-accent-text: #7ab034; // Accent color to call extra attention to text, borders, or other visual trim (e.g., names of buttons described in tutorial, or perhaps an active element among a set)
+$cwd-color-subheading-text: #ac6464; // Accent color for subheadings that appear under a main title (e.g., categories under news headlines) - be mindful of link colors when selecting this color, to avoid miscommunication of links vs. non-links  
+$headings-small-color: inherit; // Override Bootstrap's forced gray color for <small> tags inside headings

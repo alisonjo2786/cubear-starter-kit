@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the CWD Cornell Base (D8 Bootstrap) theme.
+
+cwd_base_bootstrap.settings:
+  type: theme_settings
+  label: 'CWD Cornell Base (D8 Bootstrap) settings'

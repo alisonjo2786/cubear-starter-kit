@@ -1,0 +1,8 @@
+global-styling:
+  css:
+    theme:
+      css/admin.css: {}
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }
+      https://fonts.googleapis.com/icon?family=Material+Icons: { type: external, minified: true }
+  js:
+    js/admin.js: {}
