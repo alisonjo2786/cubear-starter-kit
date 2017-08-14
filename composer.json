@@ -22,7 +22,9 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "~1.0",
-        "drupal/core": "~8.4.0-alpha1",
+        "drupal/core": "^8.4.0@alpha",
+        "drupal/config_direct_save": "^1.0",
+        "drupal/config_installer": "^1.0",
         "webflo/drupal-finder": "^0|^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -33,6 +35,8 @@
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsstream": "~1.2",
+        "drush-ops/behat-drush-endpoint": "^0.0.4",
+        "pantheon-systems/quicksilver-pushback": "~1",
         "phpunit/phpunit": ">=4.8.28 <5",
         "symfony/css-selector": "^3.2"
     },
@@ -42,6 +46,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
       "sort-packages": true
     },
     "autoload": {
@@ -58,9 +64,11 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
+            "@drupal-scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
+            "@drupal-scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
