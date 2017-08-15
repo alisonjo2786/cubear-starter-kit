@@ -16,6 +16,6 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
 
 The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/alisonjo2786/vanilla2/commit/7d4a62eae45696da1c370aabaa90115fb28748c7) for more info.
 
-# See also
+## See also
 
 Refer to the [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) README for more info about that project template, and how to use it (and therefore how to use this project).
