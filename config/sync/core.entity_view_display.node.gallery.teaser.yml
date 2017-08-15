@@ -32,3 +32,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_gallery_image: true
+  field_gallery_type: true

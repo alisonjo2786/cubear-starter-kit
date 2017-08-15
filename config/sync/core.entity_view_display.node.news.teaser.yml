@@ -59,4 +59,5 @@ content:
 hidden:
   body: true
   field_categories: true
+  field_paragraphs: true
   field_tags: true

@@ -25,4 +25,9 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_event_date: true
+  field_image_single: true
+  field_link_single: true
+  field_localist_eid: true
+  field_localist_eid_inst: true
