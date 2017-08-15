@@ -11,6 +11,7 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
     * this thread was one of my main resources: https://www.drupal.org/node/2874827 
 * added some of the pantheon files from [pantheon-systems/example-drops-8-composer](https://github.com/pantheon-systems/example-drops-8-composer)
 * added all config from our working demo site (omitted link)
+  * (if you work with me, ping me and I'll give you the site UUID for importing the config)
 
 ## Vanilla-er
 
