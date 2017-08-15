@@ -687,7 +687,8 @@ if ($settings['hash_salt']) {
 /**
  * Load services definition file.
  */
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['container_yamls'][] = __DIR__ . '/services.yml';
+
 
 /**
  * Override the default service container class.
@@ -769,7 +770,31 @@ $settings['file_scan_ignore_directories'] = [
  */
 $settings['entity_update_batch_size'] = 50;
 
-$config_directories['sync'] = '../config/sync';
+/**
+ * Place the config directory outside of the Drupal root.
+ */
+$config_directories = array(
+  CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
+);
+
+/**
+ * Hardcode the install profile setting, to prevent the installer from
+ * modifying settings.php.
+ *
+ * See: tests/installer-features/installer.feature
+ */
+$settings['install_profile'] = 'minimal';
+
+/**
+ * Include the Pantheon-specific settings file.
+ *
+ * n.b. The settings.pantheon.php file makes some changes
+ *      that affect all envrionments that this site
+ *      exists in.  Always include this file, even in
+ *      a local development environment, to ensure that
+ *      the site settings remain consistent.
+ */
+include __DIR__ . "/settings.pantheon.php";
 
 /**
  * Load local development override configuration, if available.
