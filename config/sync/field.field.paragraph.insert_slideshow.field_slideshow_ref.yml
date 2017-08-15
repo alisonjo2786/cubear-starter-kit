@@ -1,0 +1,29 @@
+uuid: f063abe5-fea5-4c7b-aa89-f7e54165bc1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_ref
+    - node.type.slideshow
+    - paragraphs.paragraphs_type.insert_slideshow
+id: paragraph.insert_slideshow.field_slideshow_ref
+field_name: field_slideshow_ref
+entity_type: paragraph
+bundle: insert_slideshow
+label: 'Insert a slideshow'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      slideshow: slideshow
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

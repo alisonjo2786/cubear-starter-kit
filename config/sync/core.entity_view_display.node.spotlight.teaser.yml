@@ -1,0 +1,62 @@
+uuid: 36ed9208-67b0-4161-ba0d-9d0a63d7c7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_categories
+    - field.field.node.spotlight.field_image_single
+    - field.field.node.spotlight.field_link_single
+    - field.field.node.spotlight.field_tags
+    - field.field.node.spotlight.field_teaser
+    - node.type.spotlight
+  module:
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: Hwhoe2zlCMu6YFtux1eJ9kPOICxGXIXRT4LhulnHM78
+id: node.spotlight.teaser
+targetEntityType: node
+bundle: spotlight
+mode: teaser
+content:
+  field_image_single:
+    type: image
+    weight: 3
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_link_single:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_categories: true
+  field_tags: true

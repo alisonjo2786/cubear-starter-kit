@@ -1,0 +1,14 @@
+uuid: 5d71a34a-1092-4117-8059-0ff5bd4f6b5d
+name: Doggo
+mail: cd-drupal-l@list.cornell.edu
+slogan: 'Cool as h*ck.'
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

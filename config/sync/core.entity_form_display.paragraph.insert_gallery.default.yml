@@ -1,0 +1,32 @@
+uuid: e57a259f-a0b4-4b4b-9169-769ca2f773b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.eb_nodes1
+    - field.field.paragraph.insert_gallery.field_gallery_ref
+    - paragraphs.paragraphs_type.insert_gallery
+  module:
+    - entity_browser
+id: paragraph.insert_gallery.default
+targetEntityType: paragraph
+bundle: insert_gallery
+mode: default
+content:
+  field_gallery_ref:
+    weight: 0
+    settings:
+      entity_browser: eb_nodes1
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_prepend
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

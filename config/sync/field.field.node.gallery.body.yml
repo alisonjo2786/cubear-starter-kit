@@ -1,0 +1,24 @@
+uuid: b9012ce6-4899-4ce0-a69e-a884657e8b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gallery
+  module:
+    - text
+_core:
+  default_config_hash: YB6FcBA_SUKvZUAgZEo9oy1mqwuNbK3owBFq8VW6YlM
+id: node.gallery.body
+field_name: body
+entity_type: node
+bundle: gallery
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,24 @@
+uuid: e645c945-73ae-4463-bae4-c3a8c6f6bf82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.spotlight
+  module:
+    - text
+_core:
+  default_config_hash: dOZRVg8v5NlqJ5NiM4AOEtDfdklTDL_EZyr6SL-3KLg
+id: node.spotlight.body
+field_name: body
+entity_type: node
+bundle: spotlight
+label: 'Spotlight body'
+description: 'Use this field if the Spotlight item has its own content (<strong>instead of</strong> simply linking to a URL with the "Spotlight link" field below).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

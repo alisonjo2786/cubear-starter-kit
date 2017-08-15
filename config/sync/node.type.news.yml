@@ -1,0 +1,19 @@
+uuid: 7a75cb55-7e06-47eb-aadc-65941628afdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: w1zwkfUxFBXJAoRlvcGhc4m3O1uM43VZfae2MA0AR3A
+name: News
+type: news
+description: 'News ctype description goes here.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

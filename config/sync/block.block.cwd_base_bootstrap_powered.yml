@@ -1,0 +1,22 @@
+uuid: f32fb7ed-d564-4c33-82fd-510cfadd1473
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: 15LZ1Dmzf9xS6vTrXYHOyJtlyGBjJ7PkFe5qFiY6lzA
+id: cwd_base_bootstrap_powered
+theme: cwd_base_bootstrap
+region: footer
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: df8d7fef-259c-43f2-a4ef-59920890a01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alt_text
+    - paragraphs.paragraphs_type.slideshow_slide
+_core:
+  default_config_hash: qdiaI9WV4LzhMWFJnaMMIZbidLKWM1Ky39mqzZUufhI
+id: paragraph.slideshow_slide.field_image_alt_text
+field_name: field_image_alt_text
+entity_type: paragraph
+bundle: slideshow_slide
+label: 'Image alt text'
+description: 'This text will only be used if both <i>title</i> and <i>caption</i> are empty (and should be considered required in such a case). It will be accessible to screen readers and visible to all users on keyboard focus.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

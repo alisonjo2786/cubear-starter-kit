@@ -1,0 +1,32 @@
+uuid: 470b633a-2d3b-4b8b-aacb-bce3bce4eae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.slideshow
+    - paragraphs.paragraphs_type.slideshow_slide
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 10CcYm845MxGBsWT2-o7DCzCqLzYUSICGPHz6NcLTlY
+id: node.slideshow.field_slides
+field_name: field_slides
+entity_type: node
+bundle: slideshow
+label: Slides
+description: 'Add one or more slides to this slideshow. Slides can be reordered by drag-and-drop.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slideshow_slide: slideshow_slide
+    target_bundles_drag_drop:
+      slideshow_slide:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

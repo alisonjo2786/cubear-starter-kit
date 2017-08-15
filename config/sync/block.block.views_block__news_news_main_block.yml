@@ -1,0 +1,30 @@
+uuid: a16309d6-7477-4975-a905-c9c3ddc40b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - cwd_base_bootstrap
+id: views_block__news_news_main_block
+theme: cwd_base_bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:news-news_main_block'
+settings:
+  id: 'views_block:news-news_main_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

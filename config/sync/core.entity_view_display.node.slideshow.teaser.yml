@@ -1,0 +1,22 @@
+uuid: b17a709a-a775-4658-b3a3-9cdb47c17b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshow.field_slides
+    - node.type.slideshow
+  module:
+    - user
+_core:
+  default_config_hash: U5U0V4tMNaWnGaEUXVzGW8eqTfz9t2ZzEa0-hI1gmuY
+id: node.slideshow.teaser
+targetEntityType: node
+bundle: slideshow
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_slides: true

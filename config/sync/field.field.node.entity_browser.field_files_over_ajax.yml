@@ -1,0 +1,27 @@
+uuid: 33937572-ab28-4ac2-aff0-73a5a783dd7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files_over_ajax
+    - node.type.entity_browser
+_core:
+  default_config_hash: gUdCbnePrXpUILfvKsI3h1srqY69r58X9X9tHXqjrzU
+id: node.entity_browser.field_files_over_ajax
+field_name: field_files_over_ajax
+entity_type: node
+bundle: entity_browser
+label: 'Files (with auto loading)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

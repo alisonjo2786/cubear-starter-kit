@@ -1,0 +1,22 @@
+uuid: e6e083f0-b31a-47d7-8be0-72c9f810c590
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: qOex8_vIpzJARyYkb80ifEmCwQl_78N6wmQKKYNjrh0
+id: cwd_base_bootstrap_messages
+theme: cwd_base_bootstrap
+region: header
+weight: -9
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

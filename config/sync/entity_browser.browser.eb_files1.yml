@@ -1,0 +1,29 @@
+uuid: d24d3ef3-a659-45d4-b877-b4dfc1116778
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kjPOTJt29zNEbL4kUf6DR6E0W_01O_lV-r6_UOaVFGc
+name: eb_files1
+label: 'Entity browser for files 1'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select files'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  41e06a7e-9a14-4b78-8733-4ec13a702330:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+    uuid: 41e06a7e-9a14-4b78-8733-4ec13a702330
+    weight: 1
+    label: 'Upload files'
+    id: upload

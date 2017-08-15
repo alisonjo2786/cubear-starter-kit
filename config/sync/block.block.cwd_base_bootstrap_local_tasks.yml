@@ -1,0 +1,22 @@
+uuid: 96872831-bb51-4c68-86e8-1c5867c71afb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: '-b4pXI32ezdKikiYlAs-Ht_A8cIJ4l3O6-rpMFB5lFk'
+id: cwd_base_bootstrap_local_tasks
+theme: cwd_base_bootstrap
+region: header
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

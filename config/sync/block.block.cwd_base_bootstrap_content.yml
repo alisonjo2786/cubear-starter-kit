@@ -1,0 +1,22 @@
+uuid: 73c68a36-8304-465b-9378-f6c791df576f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: EI8hMRieI6WluTPd1I5yGR-8JGaPW7hgBGlvGqy0eJw
+id: cwd_base_bootstrap_content
+theme: cwd_base_bootstrap
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

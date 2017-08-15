@@ -1,0 +1,23 @@
+uuid: c0f570a2-3c5c-45cf-a4c8-9af831cff380
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_type
+    - node.type.gallery
+  module:
+    - options
+id: node.gallery.field_gallery_type
+field_name: field_gallery_type
+entity_type: node
+bundle: gallery
+label: 'Gallery Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

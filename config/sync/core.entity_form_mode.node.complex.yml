@@ -1,0 +1,12 @@
+uuid: 2623d4ff-909f-4989-8bfd-ee833dea6aa7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: oFoGZlQzFUi11CAiCds-GsgdjeUpQ2mugJbUUe-0eUI
+id: node.complex
+label: Complex
+targetEntityType: node
+cache: true

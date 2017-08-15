@@ -1,0 +1,27 @@
+cdn_provider: ''
+fluid_container: 1
+forms_smart_descriptions: 0
+table_hover: 0
+navbar_position: static-top
+_core:
+  default_config_hash: aJuB1tbz7LNWOtDgHkkKXkpxsgOLv3vTklO4MtwEaV0
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://doggo-cdd8.pantheonsite.io/themes/cwd_base_bootstrap/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  cwd_base_bootstrap: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: ''
+  url: ''
+  use_default: true
+cwd_base_bootstrap_h2: 'The Gold Copy'
+cwd_base_bootstrap_h3: 'Subheading for the site goes here'
+table: ''

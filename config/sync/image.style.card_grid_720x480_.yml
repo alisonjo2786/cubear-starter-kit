@@ -1,0 +1,14 @@
+uuid: 4750bb10-4053-458a-85fd-937502d40eb5
+langcode: en
+status: true
+dependencies: {  }
+name: card_grid_720x480_
+label: 'Card Grid (720x480)'
+effects:
+  26807eb4-9d59-495e-a500-384e4b073ba6:
+    uuid: 26807eb4-9d59-495e-a500-384e4b073ba6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 480

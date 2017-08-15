@@ -1,0 +1,29 @@
+uuid: 3cfbdfcf-e96a-495e-8270-b8d7bfe6522d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_ref
+    - node.type.gallery
+    - paragraphs.paragraphs_type.insert_gallery
+id: paragraph.insert_gallery.field_gallery_ref
+field_name: field_gallery_ref
+entity_type: paragraph
+bundle: insert_gallery
+label: 'Insert a gallery'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

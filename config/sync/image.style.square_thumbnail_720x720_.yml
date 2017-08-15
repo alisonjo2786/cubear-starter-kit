@@ -1,0 +1,14 @@
+uuid: 6a5facac-04d2-4dd4-9c08-52afa88d5bdb
+langcode: en
+status: true
+dependencies: {  }
+name: square_thumbnail_720x720_
+label: 'Square Thumbnail (720x720)'
+effects:
+  db10fd2f-241b-498d-95bb-d56c625b2cc1:
+    uuid: db10fd2f-241b-498d-95bb-d56c625b2cc1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 720

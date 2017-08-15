@@ -1,0 +1,7 @@
+uuid: 1fc788cd-35a6-44dc-ad62-a081ab830aaa
+langcode: en
+status: true
+dependencies: {  }
+id: insert_gallery
+label: Gallery
+behavior_plugins: {  }

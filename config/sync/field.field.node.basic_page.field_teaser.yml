@@ -1,0 +1,23 @@
+uuid: c9f4b7d4-ff12-4a7b-8866-ab317790d0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.basic_page
+  module:
+    - text
+_core:
+  default_config_hash: AyeA9SecKO1WW6SB-5VYuq_m5vxuq8O7_UBiFXTyU3g
+id: node.basic_page.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: basic_page
+label: 'Teaser text (summary)'
+description: 'OPTIONAL (provide teaser text for use in lists/summaries).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 1888db4a-4e59-4b4d-9d8e-84439ff045eb
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: PqZNFxMhZQFaX-d-CEVyS59E__tDlJbiVQeT-U1V6OY
+id: cwd_base_bootstrap_branding
+theme: cwd_base_bootstrap
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

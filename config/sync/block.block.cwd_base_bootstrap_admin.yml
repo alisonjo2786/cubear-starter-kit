@@ -1,0 +1,26 @@
+uuid: b3e81424-f8c9-4c96-929c-da14e57010b3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: jMWyToBlh94jeIHTsQCUNvKzChRSYKnQi4Z5C4wdU9Q
+id: cwd_base_bootstrap_admin
+theme: cwd_base_bootstrap
+region: sidebar_first
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

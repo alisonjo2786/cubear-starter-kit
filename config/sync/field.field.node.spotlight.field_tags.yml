@@ -1,0 +1,30 @@
+uuid: 7fa14660-3013-4ab6-a849-e3c51c8e3efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.spotlight
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: NbTr5FgbnNeC88X0plFQpkeRkHaQy24yejQex-O530U
+id: node.spotlight.field_tags
+field_name: field_tags
+entity_type: node
+bundle: spotlight
+label: Tags
+description: 'Optionally, select one or more tags for this <em>spotlight</em> item.  If you can''t find the tag you need (or similar enough), you may add a new tag to the system.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: fe79ef1f-7954-4121-b60c-22c581e77a99
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_admin
+_core:
+  default_config_hash: cS_DaggWJNbAsS6l0bC8Elvqhc1oEcDot9jGKY-OZvw
+id: cwd_admin_messages
+theme: cwd_admin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

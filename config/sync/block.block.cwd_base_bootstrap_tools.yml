@@ -1,0 +1,26 @@
+uuid: 281596e5-a88c-44a4-851d-fd39e25a31d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: RZToQZ6Dm0g8DyrhY9KXxJrygZnzbeH9Un6xZuqdLfs
+id: cwd_base_bootstrap_tools
+theme: cwd_base_bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

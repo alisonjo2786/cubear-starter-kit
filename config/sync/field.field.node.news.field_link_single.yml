@@ -1,0 +1,25 @@
+uuid: b81a4f61-6b58-48ba-b9a4-a495c01117e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_single
+    - node.type.news
+  module:
+    - link
+_core:
+  default_config_hash: 6YPQze8sFo7BRCunABiVNq9BAg4lz8iGRMJJhMhqhvQ
+id: node.news.field_link_single
+field_name: field_link_single
+entity_type: node
+bundle: news
+label: 'External news link'
+description: 'Use this field to link to an <strong>external news story</strong>, rather than duplicating the story here on this site.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

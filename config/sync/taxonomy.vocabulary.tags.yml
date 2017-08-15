@@ -1,0 +1,11 @@
+uuid: ce9c60d1-a3b8-44f1-a9e4-aa9638854025
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SMG7oJUBc_YfHvlxWNCwdo0nmKbASmTSrVtjAsVVeZM
+name: Tags
+vid: tags
+description: 'Tags vocab description goes here.'
+hierarchy: 0
+weight: 0

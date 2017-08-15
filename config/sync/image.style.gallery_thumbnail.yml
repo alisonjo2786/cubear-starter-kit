@@ -1,0 +1,14 @@
+uuid: 465a90ed-8cb5-4fa2-b08a-16920edf9e2e
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_thumbnail
+label: 'Gallery Thumbnail (240x240)'
+effects:
+  f0df18e7-a762-4578-b120-0c03de6c5783:
+    uuid: f0df18e7-a762-4578-b120-0c03de6c5783
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 240

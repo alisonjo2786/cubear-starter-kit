@@ -1,0 +1,30 @@
+uuid: 3691d40a-5355-420d-b47e-6acc31e5af9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.spotlight
+    - taxonomy.vocabulary.categories
+_core:
+  default_config_hash: BWfur6ECrP2gMnoGQj8FB85cLvI71rssG7fVUhRsjXw
+id: node.spotlight.field_categories
+field_name: field_categories
+entity_type: node
+bundle: spotlight
+label: Categories
+description: 'Optionally, select one or more categories for this <em>spotlight</em> item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 2be2d9c5-3552-43c2-8a24-e73aeb86b170
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: DsmtGaYd67Kdxp40l2LPpMwm_N0wMvT2_9b7NDLKons
+id: cwd_base_bootstrap_local_actions
+theme: cwd_base_bootstrap
+region: header
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

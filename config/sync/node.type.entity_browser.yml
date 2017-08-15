@@ -1,0 +1,19 @@
+uuid: 6057c678-e8f3-406c-ab74-f5af8f36af87
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: WbqsUzaawaYrdsNRn-CjqVm6GFsO0ciU0DjT6fnXIWQ
+name: 'Entity browser'
+type: entity_browser
+description: 'Entity browser ctype description goes here.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

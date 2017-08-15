@@ -1,0 +1,34 @@
+uuid: 85d28156-62a3-488b-8ba2-3050be351d60
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.entity_browser.body
+    - field.field.node.entity_browser.field_files_over_ajax
+    - field.field.node.entity_browser.field_image_browser
+    - node.type.entity_browser
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: j6p3cFdBNTl8Uie3QXRrLKMcrrofIe5D_WoHctCFzHs
+id: node.entity_browser.teaser
+targetEntityType: node
+bundle: entity_browser
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_files_over_ajax: true
+  field_image_browser: true

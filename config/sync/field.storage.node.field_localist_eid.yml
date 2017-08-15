@@ -1,0 +1,21 @@
+uuid: fc320040-df4b-4359-bf9c-8ab7d9a5d7cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_localist_eid
+field_name: field_localist_eid
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

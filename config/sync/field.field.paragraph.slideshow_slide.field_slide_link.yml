@@ -1,0 +1,25 @@
+uuid: 16a59042-6c77-4032-8190-be95b3abb1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_link
+    - paragraphs.paragraphs_type.slideshow_slide
+  module:
+    - link
+_core:
+  default_config_hash: rkjVSjeBphrc22quKP6ru3PdXzpmUW7jWJbt7Izi9cM
+id: paragraph.slideshow_slide.field_slide_link
+field_name: field_slide_link
+entity_type: paragraph
+bundle: slideshow_slide
+label: 'Slide link'
+description: 'If filled in, the title and/or caption will be a clickable link. <code><b>Hint:</b> Requires a title and/or caption be present. If not, <i>Image alt text</i> should be provided.</code>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,32 @@
+uuid: 30fef4fc-baed-4870-85ee-9e9f00972d74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshow.field_slides
+    - node.type.slideshow
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: F2qjv-3GazppRbNb2IP1UgI8PQ_XeTDe2hLxtU1-oms
+id: node.slideshow.default
+targetEntityType: node
+bundle: slideshow
+mode: default
+content:
+  field_slides:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

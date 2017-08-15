@@ -1,0 +1,24 @@
+uuid: 07164385-04cc-4694-a8b7-607a126bc0f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.news
+  module:
+    - text
+_core:
+  default_config_hash: L3VdqyNJr0aay-6S5UIAKOkJEAK6DSN7rGS92VRk9SU
+id: node.news.body
+field_name: body
+entity_type: node
+bundle: news
+label: 'News story (body)'
+description: 'Use this field if the News item has its own content (<strong>instead of</strong> simply linking to a URL with the "External news link" field below).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

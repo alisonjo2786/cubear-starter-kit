@@ -1,0 +1,14 @@
+uuid: 3c7a34c8-741b-4d7f-ba77-7336d969bae9
+langcode: en
+status: true
+dependencies: {  }
+name: spotlight
+label: Spotlight
+effects:
+  05321f7f-0a43-4d00-b9c9-4a2210a8f1c2:
+    uuid: 05321f7f-0a43-4d00-b9c9-4a2210a8f1c2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 320

@@ -1,0 +1,22 @@
+uuid: 8927d1bd-e3c3-4315-b811-c6d6460acfdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: vSmy9JG371NO1vnNmnGOCcAdAnLxzcDD7ozDi5nYbWI
+id: cwd_base_bootstrap_help
+theme: cwd_base_bootstrap
+region: help
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

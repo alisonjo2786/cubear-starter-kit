@@ -1,0 +1,23 @@
+uuid: a64fd676-12d7-40d8-94dd-1280d7e0d1ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.news
+  module:
+    - text
+_core:
+  default_config_hash: A-QzoRxRpVHgG8Y9y0KwLqptqPGjikQrW-4oFBXvTwE
+id: node.news.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: news
+label: 'Teaser text (summary)'
+description: 'Provide teaser text for use in lists/summaries.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

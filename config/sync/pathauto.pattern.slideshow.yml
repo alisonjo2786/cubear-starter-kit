@@ -1,0 +1,22 @@
+uuid: 8b01f416-a349-484f-ba31-a90fa9d13bcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: slideshow
+label: Slideshow
+type: 'canonical_entities:node'
+pattern: 'slideshow/[node:title]'
+selection_criteria:
+  406e6f55-4c05-41f1-8bfb-cde1df362476:
+    id: node_type
+    bundles:
+      slideshow: slideshow
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 406e6f55-4c05-41f1-8bfb-cde1df362476
+selection_logic: and
+weight: -5
+relationships: {  }

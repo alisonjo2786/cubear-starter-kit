@@ -1,0 +1,20 @@
+uuid: e9fe5f58-b583-4752-b714-3733b97dd016
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: YSh5ehMkMPVQm1XBM2dgGGZf4ZqR6L6lJMvgOLf751Q
+name: 'Basic page'
+type: basic_page
+description: 'Basic page ctype description goes here.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

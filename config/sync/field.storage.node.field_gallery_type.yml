@@ -1,0 +1,27 @@
+uuid: 7edbf8f3-85ac-4809-a914-9291daf088ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gallery_type
+field_name: field_gallery_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Viewer with Thumbnails'
+    -
+      value: 1
+      label: 'Thumbnail Grid with Modal'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

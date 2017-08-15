@@ -1,0 +1,22 @@
+uuid: 367a15c9-564a-4dc9-a616-765d329963b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - cwd_admin
+_core:
+  default_config_hash: BVE6J147xe0GHPSY-Lv6H5F-z4DfXxABodx2njosHoo
+id: cwd_admin_login
+theme: cwd_admin
+region: content
+weight: -1
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: a37c3959-5ee9-42b3-9d29-3b2abc7716e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.spotlight
+  module:
+    - text
+_core:
+  default_config_hash: NHM5ndTR_M-Z-KCdnBBuHoxKAtUBSZK6h6Bp7qxStBQ
+id: node.spotlight.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: spotlight
+label: 'Teaser text (summary)'
+description: 'Provide teaser text for use in lists/summaries.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

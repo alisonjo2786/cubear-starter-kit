@@ -1,0 +1,26 @@
+uuid: 143b5e75-aa6d-4739-bc25-e9e90935b9e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: BKF_P-nj9X-Nr67lKBEheJeoD9QH1_Z6OdHe5LslKR0
+id: cwd_base_bootstrap_account_menu
+theme: cwd_base_bootstrap
+region: navigation_collapsible
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

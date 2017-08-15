@@ -1,0 +1,25 @@
+uuid: 75fc6f8e-015b-455b-8389-d98ca8089881
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_admin
+_core:
+  default_config_hash: 7N5tdxFAy8RWntYYNaDg4oo6IQgJsDyeT32Ygw_55gM
+id: cwd_admin_branding
+theme: cwd_admin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

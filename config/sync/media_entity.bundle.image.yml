@@ -1,0 +1,14 @@
+uuid: f3eae496-abb5-481d-850d-8aa699b491f1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pPrn3tXsnoTEZxnUpb4P5QxRZM7zZD_okzvdnM0-Ujg
+id: image
+label: Image
+description: ''
+type: generic
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration: {  }
+field_map: {  }

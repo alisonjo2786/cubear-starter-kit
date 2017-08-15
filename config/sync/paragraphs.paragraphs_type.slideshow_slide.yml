@@ -1,0 +1,9 @@
+uuid: 8cca4640-351e-4fb0-a337-448e85d50447
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: laG7BQTzUY7dXq_Zl7u6P4xDBgflQIA5IpS0RAwhs8U
+id: slideshow_slide
+label: 'Slideshow slide'
+behavior_plugins: {  }

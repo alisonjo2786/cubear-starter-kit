@@ -1,0 +1,30 @@
+uuid: b63bdf65-a1d4-4f7a-a08e-1d1eb571a619
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.news
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: lAU4AVhALeTXpQ9q3LY7-8MfQ8cMihc2OR4OP1kdeuE
+id: node.news.field_tags
+field_name: field_tags
+entity_type: node
+bundle: news
+label: Tags
+description: 'Optionally, select one or more tags for this <em>news</em> item.  If you can''t find the tag you need (or similar enough), you may add a new tag to the system.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

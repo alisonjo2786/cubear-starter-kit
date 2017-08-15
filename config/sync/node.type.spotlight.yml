@@ -1,0 +1,20 @@
+uuid: 483fd6ff-77ce-4ea3-8e26-fe3ba1c08144
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: kUn8H8Yf6jW4hNtg9WmssNNRCDJUsSTa0IcB-y3LRig
+name: Spotlight
+type: spotlight
+description: 'Spotlight ctype description goes here... Spotlights have a featured image, and usually they''re used to promote (spotlight!) external content or another piece of content on this website.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

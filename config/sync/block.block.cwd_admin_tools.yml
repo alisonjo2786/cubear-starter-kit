@@ -1,0 +1,26 @@
+uuid: 81d547fa-0af5-4dfa-b8a3-1f8b714c5e3a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - cwd_admin
+_core:
+  default_config_hash: ExACwAFwYsNEkOfjDRwcBIS1DDN9-5_IHyyZ5KEH7MQ
+id: cwd_admin_tools
+theme: cwd_admin
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
