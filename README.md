@@ -38,6 +38,10 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
 
 **That's it! :)**
 
+### For a Pantheon site
+The instructions are similar, but not optimally elegant *yet*.
+[will add these tomorrow -- but it's basically, create an empty pantheon site, clone the repo down, completely replace the code with the code from THIS repo, run composer install, update .gitignore so you can commit all those composer-generated artifacts to the repo, push back to pantheon, and then proceed with the process above -- using terminus drush commands, and skipping the "cd" commands of course]
+
 ## Vanilla-er
 
 The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/alisonjo2786/vanilla2/commit/7d4a62eae45696da1c370aabaa90115fb28748c7) for more info.
