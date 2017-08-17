@@ -36,11 +36,12 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
     1. Select "Simple configuration" > "system.site"
     1. Replace the contents of config/system.site.yml with the contents of "Here is your configuration"
 
-**That's it! :)**
+**That's it! :)**  Enjoy your new Drupal 8.4.x + composer site!
 
 ### For a Pantheon site
 The instructions are similar, but not optimally elegant *yet*.
 [will add these tomorrow -- but it's basically, create an empty pantheon site, clone the repo down, completely replace the code with the code from THIS repo, run composer install, update .gitignore so you can commit all those composer-generated artifacts to the repo, push back to pantheon, and then proceed with the process above -- using terminus drush commands, and skipping the "cd" commands of course]
+[and also, do the redis thing -- configure redis https://pantheon.io/docs/redis/ -- @todo: prevent redis from being enabled]
 
 ## Vanilla-er
 
