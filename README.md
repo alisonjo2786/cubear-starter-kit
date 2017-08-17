@@ -14,6 +14,8 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
   * (if you work with me, ping me and I'll give you the site UUID for importing the config)
 
 ### Usage
+**NOTE:** For best results, make sure your Drush version is updated to the latest stable version, Drush 8.1.12.
+
 1. `git clone git@github.com:alisonjo2786/vanilla2.git vanilla3`
 1. `cd vanilla3`
 1. `composer install`
