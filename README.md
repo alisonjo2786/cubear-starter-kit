@@ -8,10 +8,35 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
 * upgraded Drupal core to 8.4.0-alpha1
   * which included changes to composer.json from the regular drupal-composer/drupal-project
     * ps this was somewhat of a nightmare -- apparently 8.4.0 requires a newer major version of symfony, and that caused all sorts of pain...
-    * this thread was one of my main resources: https://www.drupal.org/node/2874827 
+    * this thread was one of my main resources: https://www.drupal.org/node/2874827
 * added some of the pantheon files from [pantheon-systems/example-drops-8-composer](https://github.com/pantheon-systems/example-drops-8-composer)
 * added all config from our working demo site (omitted link)
   * (if you work with me, ping me and I'll give you the site UUID for importing the config)
+
+### Usage
+1. `git clone git@github.com:alisonjo2786/vanilla2.git vanilla3`
+1. `cd vanilla3`
+1. `composer install`
+1. Then install drupal using the *minimal* install profile.
+1. Then back in your terminal...
+1. `cd web`
+1. `drush cget system.site uuid`
+    * Record this value so you can go back to it later.
+1. `drush cset system.site uuid qwerty-the-uuid-you-got-from-me-see-above`
+1. `drush cim`
+1. `drush entity-updates`
+    * Most likely you'll see "The node.body field needs to be updated." (say `y`)
+1. `drush cr`
+1. Check your new site a litte bit, then...
+1. `drush cset system.site uuid asdfgh-the-original-uuid-you-recorded-earlier`
+1. `drush cr`
+1. Then, either delete all the config files in `config/` (because now you can just move forward with whatever), OR, update `config/system.site.yml`:
+    1. In your browser, go to:<br />
+    admin/config/development/configuration/single/export
+    1. Select "Simple configuration" > "system.site"
+    1. Replace the contents of config/system.site.yml with the contents of "Here is your configuration"
+
+**That's it! :)**
 
 ## Vanilla-er
 
