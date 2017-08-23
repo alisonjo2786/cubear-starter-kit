@@ -53,3 +53,18 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
 ## See also
 
 Refer to the [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) README for more info about that project template, and how to use it (and therefore how to use this project).
+
+## [incomplete] Pantheon + GH + CircleCI instructions
+1. Prerequisites: Terminus (1.x) and `terminus-build-tools-plugin` -- need to use 2.x branch (as of 2017-08-22 there's a 2.0.0-alpha2 tag).
+1. Create or edit ~/.terminus/config.yml (in your local env), to add a "starter site shortcut" [like these examples](https://github.com/pantheon-systems/terminus-build-tools-plugin/tree/2.0.0-alpha2#starter-site-shortcuts).
+    1. Mine contains the following:<br >
+    ```
+    command:
+      build:
+        project:
+          create:
+            shortcuts:
+              vanilla2: alisonjo2786/vanilla2:dev-master
+    ```
+1. Then, run `terminus build:project:create` with the applicable options -- my command looks like this:<br />
+`terminus build:project:create --team="cornell-university-cornell-information-technologies" vanilla2 ajm-vanilla2`
