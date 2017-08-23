@@ -43,7 +43,7 @@ content:
     type: image_image
     region: content
   field_gallery_type:
-    type: options_select
+    type: options_buttons
     weight: 1
     region: content
     settings: {  }
