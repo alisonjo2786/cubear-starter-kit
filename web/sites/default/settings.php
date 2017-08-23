@@ -36,3 +36,4 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
  *
  * See: tests/installer-features/installer.feature
  */
+$settings['install_profile'] = 'config_installer';
