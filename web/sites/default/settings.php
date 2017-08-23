@@ -37,3 +37,14 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
  * See: tests/installer-features/installer.feature
  */
 $settings['install_profile'] = 'minimal';
+$databases['default']['default'] = array (
+  'database' => 'vanilla3',
+  'username' => 'vanilla3',
+  'password' => 'pass',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'U1VlmFjmRXdo_xXqaSZdygTUjKMWSrIgNfyETeJWruUzU552zw_TNkwNXcpdLORwhkSMAOgr4Q';
