@@ -1,6 +1,6 @@
 # Drupal 8.4.x + Composer
 
-This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold), plus the changes I had to make to be able to upgrade to the 4.x branch of Drupal 8 -- a process that wasn't *super* easy, b/c of some gaps in my knowledge, and oh btw the 4.x branch relies on a newer major version of Symfony :D  FWIW, this d.o thread was extremely helpful for me: https://www.drupal.org/node/2874827(Drush 8.x doesn't install Drupal 8.4.x and Drush master doesn't install Drupal 8.3.x)
+This project is a Drupal 8 codebase based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project), [pantheon-systems/example-drops-8-composer](https://github.com/pantheon-systems/example-drops-8-composer), plus the changes I had to make to be able to upgrade to the 4.x branch of Drupal 8 -- a process that wasn't *super* easy, b/c of some gaps in my knowledge, and oh btw the 4.x branch relies on a newer major version of Symfony :D  FWIW, this d.o thread was extremely helpful for me: https://www.drupal.org/node/2874827 (Drush 8.x doesn't install Drupal 8.4.x and Drush master doesn't install Drupal 8.3.x)
 
 ## What's inside
 
@@ -19,24 +19,26 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
 1. `git clone git@github.com:alisonjo2786/vanilla2.git vanilla3`
 1. `cd vanilla3`
 1. `composer install`
-1. Then install drupal using the *minimal* install profile.
-1. Then back in your terminal...
-1. `cd web`
-1. `drush cget system.site uuid`
-    * Record this value so you can go back to it later.
-1. `drush cset system.site uuid qwerty-the-uuid-you-got-from-me-see-above`
-1. `drush cim`
-1. `drush entity-updates`
-    * Most likely you'll see "The node.body field needs to be updated." (say `y`)
-1. `drush cr`
-1. Check your new site a litte bit, then...
-1. `drush cset system.site uuid asdfgh-the-original-uuid-you-recorded-earlier`
-1. `drush cr`
-1. Then, either delete all the config files in `config/` (because now you can just move forward with whatever), OR, update `config/system.site.yml`:
-    1. In your browser, go to:<br />
-    admin/config/development/configuration/single/export
-    1. Select "Simple configuration" > "system.site"
-    1. Replace the contents of config/system.site.yml with the contents of "Here is your configuration"
+1. Then install drupal using the *config_installer* install profile (via UI, or `drush`).
+1. *maybe removing these steps; futher testing needed...*
+    1. Then back in your terminal...
+    1. `cd web`
+    1. `drush cget system.site uuid`
+        * Record this value so you can go back to it later.
+    1. `drush cset system.site uuid qwerty-the-uuid-you-got-from-me-see-above`
+    1. `drush cim`
+    1. `drush entity-updates`
+        * Most likely you'll see "The node.body field needs to be updated." (say `y`)
+    1. `drush cr`
+    1. Check your new site a litte bit, then...
+    1. `drush cset system.site uuid asdfgh-the-original-uuid-you-recorded-earlier`
+    1. `drush cr`
+    1. Then, either delete all the config files in `config/` (because now you can just move forward with whatever), OR, update `config/system.site.yml`:
+        1. In your browser, go to:<br />
+        admin/config/development/configuration/single/export
+        1. Select "Simple configuration" > "system.site"
+        1. Replace the contents of config/system.site.yml with the contents of "Here is your configuration"
+1. *end of "maybe removing"*
 
 **That's it! :)**  Enjoy your new Drupal 8.4.x + composer site!
 
