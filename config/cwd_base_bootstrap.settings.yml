@@ -8,7 +8,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://doggo-cdd8.pantheonsite.io/themes/cwd_base_bootstrap/favicon.ico'
+  url: ''
   use_default: true
 schemas:
   bootstrap: 8000
