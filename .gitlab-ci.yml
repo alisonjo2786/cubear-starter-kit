@@ -18,7 +18,7 @@ cache:
 
 stages:
 - build
-- test
+#- test
 - deploy
 
 before_script:
@@ -61,10 +61,10 @@ stop_review:
     name: review/ci-$CI_PIPELINE_ID
     action: stop
 
-test:
-  stage: test
-  script:
-    - run-behat
+# test:
+#   stage: test
+#   script:
+#     - run-behat
 
 deploy:
   stage: deploy
