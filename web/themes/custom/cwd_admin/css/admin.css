@@ -1,0 +1,6 @@
+#system-theme-settings .form-item label + select {
+  margin-top: 0.5em;
+}
+#system-theme-settings .form-item .description {
+  color: #999;
+}

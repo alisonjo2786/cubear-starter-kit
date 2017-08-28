@@ -1,0 +1,15 @@
+{
+    "name": "cubear/cwd_admin",
+    "description": "Light enhancements for the default Drupal admin theme.",
+    "type": "drupal-custom-theme",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Anthony Adinolfi (ama39)",
+            "homepage": "https://github.com/ama39",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

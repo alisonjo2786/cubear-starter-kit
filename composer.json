@@ -33,8 +33,6 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "cubear/cwd_admin": "dev-master",
-        "cubear/cwd_base_bootstrap": "dev-master",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.19",
