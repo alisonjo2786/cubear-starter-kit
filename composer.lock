@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "941d646246349216494b29c7432b4734",
+    "content-hash": "15f10bb3a4f60e55b0df91f34aaf0780",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -356,6 +356,64 @@
                 "versioning"
             ],
             "time": "2016-08-30T16:08:34+00:00"
+        },
+        {
+            "name": "cubear/cwd_admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CU-CommunityApps/cwd_admin.git",
+                "reference": "24f3ff5a08138aa2e2e27409701bee3a91a1985b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_admin/zipball/24f3ff5a08138aa2e2e27409701bee3a91a1985b",
+                "reference": "24f3ff5a08138aa2e2e27409701bee3a91a1985b",
+                "shasum": ""
+            },
+            "type": "drupal-custom-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Adinolfi (ama39)",
+                    "homepage": "https://github.com/ama39",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Light enhancements for the default Drupal admin theme.",
+            "time": "2017-08-28T17:27:47+00:00"
+        },
+        {
+            "name": "cubear/cwd_base_bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CU-CommunityApps/cwd_base_bootstrap.git",
+                "reference": "94c08dd73c992cd267c26560256ee4a37a2d6b5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_base_bootstrap/zipball/94c08dd73c992cd267c26560256ee4a37a2d6b5e",
+                "reference": "94c08dd73c992cd267c26560256ee4a37a2d6b5e",
+                "shasum": ""
+            },
+            "type": "drupal-custom-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Adinolfi (ama39)",
+                    "homepage": "https://github.com/ama39",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A lightweight Drupal 8 theme built on Bootstrap, implementing Cornell Branding and standard CWD components.",
+            "time": "2017-08-28T17:27:59+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -9004,6 +9062,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "cubear/cwd_admin": 20,
+        "cubear/cwd_base_bootstrap": 20,
         "drupal/core": 15
     },
     "prefer-stable": true,
