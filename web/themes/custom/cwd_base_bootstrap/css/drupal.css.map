@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAUA;0CAC0C;AAG1C,oDAAqD;EACnD,OAAO,EAAE,IAAI;;;AAGf,cAAe;EACb,aAAa,EAAE,KAAK",
-"sources": ["../sass/drupal.scss"],
-"names": [],
-"file": "drupal.css"
-}
