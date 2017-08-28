@@ -363,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CU-CommunityApps/cwd_admin.git",
-                "reference": "24f3ff5a08138aa2e2e27409701bee3a91a1985b"
+                "reference": "a83aa8b67b12708c33ad456ce845f93d7bff57bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_admin/zipball/24f3ff5a08138aa2e2e27409701bee3a91a1985b",
-                "reference": "24f3ff5a08138aa2e2e27409701bee3a91a1985b",
+                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_admin/zipball/a83aa8b67b12708c33ad456ce845f93d7bff57bd",
+                "reference": "a83aa8b67b12708c33ad456ce845f93d7bff57bd",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -383,8 +383,8 @@
                     "role": "Maintainer"
                 }
             ],
-            "description": "Light enhancements for the default Drupal admin theme.",
-            "time": "2017-08-28T17:27:47+00:00"
+            "description": "Light enhancements for the default Drupal admin theme; from Cornell University CIT-CD.",
+            "time": "2017-08-28T18:04:58+00:00"
         },
         {
             "name": "cubear/cwd_base_bootstrap",
@@ -392,12 +392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CU-CommunityApps/cwd_base_bootstrap.git",
-                "reference": "94c08dd73c992cd267c26560256ee4a37a2d6b5e"
+                "reference": "c4a24a25a531a2e95b19d7319855d53a4061363f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_base_bootstrap/zipball/94c08dd73c992cd267c26560256ee4a37a2d6b5e",
-                "reference": "94c08dd73c992cd267c26560256ee4a37a2d6b5e",
+                "url": "https://api.github.com/repos/CU-CommunityApps/cwd_base_bootstrap/zipball/c4a24a25a531a2e95b19d7319855d53a4061363f",
+                "reference": "c4a24a25a531a2e95b19d7319855d53a4061363f",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -412,8 +412,8 @@
                     "role": "Maintainer"
                 }
             ],
-            "description": "A lightweight Drupal 8 theme built on Bootstrap, implementing Cornell Branding and standard CWD components.",
-            "time": "2017-08-28T17:27:59+00:00"
+            "description": "A lightweight Drupal 8 theme built on Bootstrap, implementing Cornell Branding and standard CWD components; from Cornell University CIT-CD.",
+            "time": "2017-08-28T18:05:10+00:00"
         },
         {
             "name": "cweagans/composer-patches",
