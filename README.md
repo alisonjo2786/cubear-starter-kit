@@ -60,9 +60,8 @@ Refer to the [pantheon-systems/terminus-build-tools-plugin](https://github.com/p
 
 ## Pantheon + GH + CircleCI instructions
 1. Prerequisites: Terminus (1.x) and `terminus-build-tools-plugin` -- need to use 2.x branch (as of 2017-08-22 there's a 2.0.0-alpha2 tag).
-1. Heads-ups:
-    1. **IMPORTANT:** When you're done, do **NOT** make changes/commits to your new site codebase from the GH interface -- there's a .gitignore thing from the Pantheon template, that's totally on-purpose, but it means that files will be lost if you commit in GH, so we might need to undo that, idk yet.<br />
-    _(and, during the build process itself...)_
+1. **IMPORTANT:** When you're done, do **NOT** make changes/commits to your new site codebase from the GH interface -- there's a .gitignore thing from the Pantheon template, that's totally on-purpose, but it means that files will be lost if you commit in GH, so we might need to undo that, idk yet.
+1. Other heads-ups:
     1. You'll be prompted for GitHub and CircleCI personal access tokens, but the prompts have documentation links, so just follow those as you go along.
         1. Alternatively, you can set your tokens ahead of time like this:
     https://github.com/pantheon-systems/terminus-build-tools-plugin/tree/2.0.0-alpha2#credentials
