@@ -62,7 +62,6 @@ module:
   views: 0
   views_ui: 0
   pathauto: 1
-  minimal: 1000
 theme:
   bootstrap: 0
   stable: 0
