@@ -1,3 +1,9 @@
+ # cubear-cornell-base-theme
+
+Can be used with https://github.com/CU-CommunityApps/cubear-starter-kit
+
+**See also:** https://github.com/CU-CommunityApps/cwd-design
+
 <!-- @file Instructions for subtheming using the Sass Starterkit. -->
 <!-- @defgroup sub_theming_sass -->
 <!-- @ingroup sub_theming -->
@@ -42,7 +48,7 @@ properly integrate with the [Bootstrap Framework]. It may contain a few
 enhancements, feel free to edit this file as you see fit.
 
 The `./THEMENAME/scss/style.scss` file is the glue that combines:
-`_default-variables.scss`, [Bootstrap Framework Source Files] and the 
+`_default-variables.scss`, [Bootstrap Framework Source Files] and the
 `overrides.scss` file together. Generally, you will not need to modify this
 file unless you need to add or remove files to be imported. This is the file
 that you should compile to `./THEMENAME/css/style.css` (note the same file
