@@ -56,10 +56,22 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
 
 Refer to the [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) README for more info about that project template, and how to use it (and therefore how to use this project).
 
-## [incomplete] Pantheon + GH + CircleCI instructions
+Refer to the [pantheon-systems/terminus-build-tools-plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin) README for more info about using `terminus build:project:create` (below) and other `build` funtionality.
+
+## Pantheon + GH + CircleCI instructions
 1. Prerequisites: Terminus (1.x) and `terminus-build-tools-plugin` -- need to use 2.x branch (as of 2017-08-22 there's a 2.0.0-alpha2 tag).
+1. Heads-ups:
+    1. **IMPORTANT:** When you're done, do **NOT** make changes/commits to your new site codebase from the GH interface -- there's a .gitignore thing from the Pantheon template, that's totally on-purpose, but it means that files will be lost if you commit in GH, so we might need to undo that, idk yet.<br />
+    _(and, during the build process itself...)_
+    1. You'll be prompted for GitHub and CircleCI personal access tokens, but the prompts have documentation links, so just follow those as you go along.
+        1. Alternatively, you can set your tokens ahead of time like this:
+    https://github.com/pantheon-systems/terminus-build-tools-plugin/tree/2.0.0-alpha2#credentials
+    1. You'll also be prompted for a password for "user 1" on the new site you're about to create; personally, I leave it blank and use `drush user-login` after installation, i.e.<br />
+    `terminus drush ajm-cubear-vanilla.dev -- uli`
+        1. "user 1" username will be "admin."
+    1. **IMPORTANT:** While most of the build takes care of itself, toward the end you'll get two "authenticity of host can't be established" prompts -- make sure you type "yes"!!
 1. Create or edit ~/.terminus/config.yml (in your local env), to add a "starter site shortcut" [like these examples](https://github.com/pantheon-systems/terminus-build-tools-plugin/tree/2.0.0-alpha2#starter-site-shortcuts).
-    1. Mine contains the following:<br >
+    1. Mine contains the following:<br />
     ```
     command:
       build:
@@ -70,3 +82,6 @@ Refer to the [drupal-composer/drupal-scaffold](https://github.com/drupal-compose
     ```
 1. Then, run `terminus build:project:create` with the applicable options -- my command looks like this:<br />
 `terminus build:project:create --team="cornell-university-cornell-information-technologies" cubear-starter-kit ajm-cubear-vanilla`
+1. Now, clone the repo FROM github to your local, do work locally, and push changes back up to github -- that will trigger CircleCI builds, and eventual merging of changes into "dev" on Pantheon.
+    1. OR, better, yet, create a new branch locally and use a Pull Request workflow :)
+1. Optionally, update the README in your new site repo with the CircleCI badge, so that it's easier to get from your repo to that project's CircleCI things (for some reason the badge isn't getting automatically added right now).  You can get the "status badge" embed code by going to your project on CircleCI ([example](https://circleci.com/gh/alisonjo2786/ajm-cubear-vanilla)) > settings gear at top-right > "status badge" in left sidebar menu.
