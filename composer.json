@@ -5,8 +5,9 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Alison McCauley (alisonjo2786)",
+            "homepage": "https://www.drupal.org/u/alisonjo2786",
+            "role": "Maintainer"
         }
     ],
     "repositories": [
