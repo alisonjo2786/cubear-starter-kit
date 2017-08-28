@@ -16,8 +16,8 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-project](ht
 ### Usage
 **NOTE:** For best results, make sure your Drush version is updated to the latest stable version, Drush 8.1.12.
 
-1. `git clone git@github.com:alisonjo2786/vanilla2.git vanilla3`
-1. `cd vanilla3`
+1. `git clone git@github.com:CU-CommunityApps/cubear-starter-kit.git ajm-cubear-vanilla`
+1. `cd ajm-cubear-vanilla`
 1. `composer install`
 1. Then install drupal using the *config_installer* install profile (via UI, or `drush`).
 1. *maybe removing these steps; futher testing needed...*
@@ -50,7 +50,7 @@ The instructions are similar, but not optimally elegant *yet*.
 
 ## Vanilla-er
 
-The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/alisonjo2786/vanilla2/commit/7d4a62eae45696da1c370aabaa90115fb28748c7) for more info.
+The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/CU-CommunityApps/cubear-starter-kit/commit/1de45592d7780a2aa0fe16943078b4771ec73c25) for more info.
 
 ## See also
 
@@ -66,7 +66,7 @@ Refer to the [drupal-composer/drupal-scaffold](https://github.com/drupal-compose
         project:
           create:
             shortcuts:
-              vanilla2: alisonjo2786/vanilla2:dev-master
+              cubear-starter-kit: cubear/drupal-8-starter-kit:dev-master
     ```
 1. Then, run `terminus build:project:create` with the applicable options -- my command looks like this:<br />
-`terminus build:project:create --team="cornell-university-cornell-information-technologies" vanilla2 ajm-vanilla2`
+`terminus build:project:create --team="cornell-university-cornell-information-technologies" cubear-starter-kit ajm-cubear-vanilla`
