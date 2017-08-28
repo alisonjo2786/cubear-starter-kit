@@ -29,11 +29,3 @@ $config_directories = array(
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-
-/**
- * Hardcode the install profile setting, to prevent the installer from
- * modifying settings.php.
- *
- * See: tests/installer-features/installer.feature
- */
-$settings['install_profile'] = 'config_installer';
