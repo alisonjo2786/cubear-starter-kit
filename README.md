@@ -8,14 +8,14 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-scaffold](h
 * upgraded Drupal core to 8.4.0-alpha1
   * which included changes to composer.json from the regular drupal-composer/drupal-project
     * ps this was somewhat of a nightmare -- apparently 8.4.0 requires a newer major version of symfony, and that caused all sorts of pain...
-    * this thread was one of my main resources: https://www.drupal.org/node/2874827 
+    * this thread was one of my main resources: https://www.drupal.org/node/2874827
 * added some of the pantheon files from [pantheon-systems/example-drops-8-composer](https://github.com/pantheon-systems/example-drops-8-composer)
 * added all config from our working demo site (omitted link)
   * (if you work with me, ping me and I'll give you the site UUID for importing the config)
 
 ## Vanilla-er
 
-The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/alisonjo2786/vanilla2/commit/7d4a62eae45696da1c370aabaa90115fb28748c7) for more info.
+The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files -- see my [commit #7d4a62e message](https://github.com/alisonjo2786/vanilla2/commit/1de45592d7780a2aa0fe16943078b4771ec73c25) for more info.
 
 ## See also
 
