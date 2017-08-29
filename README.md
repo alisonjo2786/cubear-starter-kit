@@ -72,8 +72,8 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
               cubear-starter-kit: cubear/drupal-8-starter-kit:dev-master
     ```
 1. Then, run `terminus build:project:create` with the applicable options -- my command looks like this:<br />
-`terminus build:project:create --team="cornell-university-cornell-information-technologies" --org="CU-CommunityApps" cubear-starter-kit ajm-cubear-vanilla`
-    1. Full documentation is over in the `terminus-build-tools-plugin` README, but briefly: `--org` is to set the child site's GitHub repo to be owned by an org (if you leave the option off, it will be owned by your personal GitHub account -- you can always transfer ownership to later), `cubear-starter-kit` is the shortcut we set in the previous step, and `ajm-cubear-vanilla` is the name of your new Pantheon site and GitHub repo.
+`terminus build:project:create --team="cornell-university-cornell-information-technologies" --org="CU-CommunityApps" --admin-email="cd-drupal-l@list.cornell.edu" cubear-starter-kit ajm-cubear-vanilla`
+    1. Full documentation is over in the `terminus-build-tools-plugin` README, but briefly: `--org` is to set the child site's GitHub repo to be owned by an org (if you leave the option off, it will be owned by your personal GitHub account -- you can always transfer ownership to later), `--admin-email` is the email to use for Drupal user 1 (defaults to your personal GitHub account email) `cubear-starter-kit` is the shortcut we set in the previous step, and `ajm-cubear-vanilla` is the name of your new Pantheon site and GitHub repo.
 1. Now, clone the repo FROM github to your local, do work locally, and push changes back up to github -- that will trigger CircleCI builds, and eventual merging of changes into "dev" on Pantheon.
     1. OR, better, yet, create a new branch locally and use a Pull Request workflow :)
 
@@ -82,6 +82,7 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
 * Configure redis https://pantheon.io/docs/redis/ (enable the add-on in Pantheon, update settings.php, enable the Drupal module)
 * Enable NewRelic in Pantheon.
 * Enable daily/weekly backups in Pantheon (if service level allows).
+* Check your "Basic site settings" (admin/config/system/site-information) and Update Manager settings (admin/reports/updates/settings).
 
 ## Contribution
 @todo: add instructions for updating/contributing to this starter kit
