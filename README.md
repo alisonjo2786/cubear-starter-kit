@@ -8,7 +8,7 @@ This project is a Drupal 8 codebase based on [drupal-composer/drupal-project](ht
 
 CU Bear distro packages: https://packagist.org/packages/cubear/
 
-**Note:** This distro uses the Bootstrap-based custom theme [cwd_bootstrap_base](https://github.com/CU-CommunityApps/cwd_bootstrap_base), and the custom admin theme [cwd_admin](https://github.com/CU-CommunityApps/cwd_admin).  Please take care in updating these theme packages on "child sites" built from this starter kit.
+**Note:** This distro uses the Bootstrap-based custom theme [cwd_base_bootstrap](https://github.com/CU-CommunityApps/cwd_base_bootstrap), and the custom admin theme [cwd_admin](https://github.com/CU-CommunityApps/cwd_admin).  Please take care in updating these theme packages on "child sites" built from this starter kit.
 
 ## What's inside
 
