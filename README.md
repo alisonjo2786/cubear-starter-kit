@@ -88,14 +88,55 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
 @todo: add instructions for updating/contributing to this starter kit
 @todo: mention possible "Ivy" distro
 
-### Probable workflow... (open to revision!)
+### Pull Request workflow
+_(Open to changes!)_
 1. Fork this repo to your own account, i.e. `alisonjo2786/cubear-starter-kit`.
 1. Clone your fork locally.  **DO NOT** make commits in the GitHub UI (b/c .gitignore things).
-1. Create a new branch where you'll do your work, i.e. `cubear-starter-kit/news-date-field`
+1. Add and rename remotes...
+    1. `git rename origin ajmfork`
+        1. **Maybe** run `git remote -v` first, to confirm the name of your repo fork remote (in case it isn't "origin").
+    1. `git remote add cu-community-repo git@github.com:CU-CommunityApps/cubear-starter-kit.git`
+1. Make sure you're up to date with all the latest things:<br />
+`git remote update`
+1. Create a new branch where you'll do your work, **from the main repo:**<br />
+`git checkout -b news-date-field cu-community-repo/master`
 1. Work.
-1. Commit changes, and push branch up to your fork -- so now, `alisonjo2786/cubear-starter-kit` has a branch called `news-date-field`.
+1. Commit changes.
+1. Check the main repo in case other changes have been committed in the meantime -- if changes **have** been committed in the meantime, rebase your copy of the repo with those changes:<br />
+`git remote update`<br />
+`git rebase cu-community-repo/master` <-- Grabs commits from the main repo, inserts them into your branch, and sticks your local commit(s) on the end.
+1. Push branch up to your fork -- so now, `alisonjo2786/cubear-starter-kit` has a branch called `news-date-field`.
+1. In GitHub, go to the branch on your fork, and start a pull request.<br />
+"Your recently pushed branches" > "Compare & pull request"
+    1. Check the two branches that GitHub is presenting to you -- the desired setup is for "base fork" to be the main repo ("CU-CommunityApps/cubear-starter-kit" > "master"), and for the "head fork" to be your fork ("alisonjo2786/cubear-starter-kit" > "news-date-field").
+    1. Add whatever description/comment.
+    1. Submit the PR.
+1. @todo: determine and describe code review and approval process...
+1. If you have permission to update/commit to the main repo, technically you can merge the PR into the main repo, but proper devops is for someone other than you to review and merge.
 
-#### Local git remote config tips
+#### Demo site
+_(The following is my process right now; very, very open to suggestions!)_
+1. Go to your local copy of `gold-bear` repo.
+1. One-time: (initial setup)
+    1. Add a secondary remote to the main `cubear-starter-kit` repo:<br />
+    `git remote add cubear-starter-kit git@github.com:CU-CommunityApps/cubear-starter-kit.git`
+    1. Create a branch that tracks `cubear-starter-kit` > `master`:<br />
+    `git checkout -b sk-master --track cubear-starter-kit/master`
+1. Go to branch that tracks the main repo.
+1. Pull from the main repo to this branch:<br />
+@todo: check this, I'm guessing from memory, may be wrong command.<br />
+`git pull cubear-starter-kit` _(may be like, git fetch nameofremote, or may be something else -- check it!)_
+1. Check the commits that come in -- like, browse the whole log, or look for the commit(s) you know you want to add to the demo site.  Make note of the commit sha/hash details that you need.
+1. Go back to `master` and create a new branch for the changes (yep, another PR coming! get excited!):<br />
+`git checkout -b coffee-update`
+1. Cherry pick the commits from the starter-kit tracking branch (`sk-master`) -- personally, I prefer to use `-x` for cherry-picks, i.e.<br />
+`git cherry-pick -x a1s2d3f4g5h6jcommithash`
+1. Push the branch up to the `gold-bear` repo, create a pull request, do pull request things.
+    1. **Keep an eye on CircleCI** -- it will do a build for the new branch, and the PR, and when the PR is merged into master.
+    1. When the process is done, the commits in the PR will have been merged into dev/master on Pantheon, too -- then you can `drush cim` or whatever.
+        1. If it's just composer updates that are needed, those will be handled by the build tools stuff that Pantheon does.
+
+#### git remote config tips
 * Rename your remotes to minimize confusion, i.e.<br />
 ```@todo```
 * If you're updating the `gold-bear` demo site, too, add a secondary remote to your local copy of that repo, and an extra branch that tracks the starter-kit repo, so you can pull down starter-kit code updates and then grab applicable commits as needed.  In other words:<br />
