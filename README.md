@@ -87,3 +87,16 @@ The `vvanilla` branch is a much plainer codebase -- no config or Pantheon files 
 ## Contribution
 @todo: add instructions for updating/contributing to this starter kit
 @todo: mention possible "Ivy" distro
+
+### Probable workflow... (open to revision!)
+1. Fork this repo to your own account, i.e. `alisonjo2786/cubear-starter-kit`.
+1. Clone your fork locally.  **DO NOT** make commits in the GitHub UI (b/c .gitignore things).
+1. Create a new branch where you'll do your work, i.e. `cubear-starter-kit/news-date-field`
+1. Work.
+1. Commit changes, and push branch up to your fork -- so now, `alisonjo2786/cubear-starter-kit` has a branch called `news-date-field`.
+
+#### Local git remote config tips
+* Rename your remotes to minimize confusion, i.e.<br />
+```@todo```
+* If you're updating the `gold-bear` demo site, too, add a secondary remote to your local copy of that repo, and an extra branch that tracks the starter-kit repo, so you can pull down starter-kit code updates and then grab applicable commits as needed.  In other words:<br />
+```@todo```
