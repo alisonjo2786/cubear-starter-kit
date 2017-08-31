@@ -105,7 +105,8 @@ _(Open to changes!)_
 1. Check the main repo in case other changes have been committed in the meantime -- if changes **have** been committed in the meantime, rebase your copy of the repo with those changes:<br />
 `git remote update`<br />
 `git rebase cu-community-repo/master` <-- Grabs commits from the main repo, inserts them into your branch, and sticks your local commit(s) on the end.
-1. Push branch up to your fork -- so now, `alisonjo2786/cubear-starter-kit` has a branch called `news-date-field`.
+1. Push branch up to your fork -- so now, `alisonjo2786/cubear-starter-kit` has a branch called `news-date-field`:<br />
+`git push ajmfork`
 1. In GitHub, go to the branch on your fork, and start a pull request.<br />
 "Your recently pushed branches" > "Compare & pull request"
     1. Check the two branches that GitHub is presenting to you -- the desired setup is for "base fork" to be the main repo ("CU-CommunityApps/cubear-starter-kit" > "master"), and for the "head fork" to be your fork ("alisonjo2786/cubear-starter-kit" > "news-date-field").
